@@ -14,10 +14,7 @@ function App() {
     <p style={{textAlign:'center', color:'blue'}}>
     
       <img src={profileImage} alt="My Img" height="100" width="100"></img> <br/> 
-            <Profile></Profile>    
-      
-
-
+      <Profile></Profile>    
     </p>
   )
 }
