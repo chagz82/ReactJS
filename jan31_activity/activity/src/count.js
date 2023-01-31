@@ -4,7 +4,7 @@ import {button} from 'react-bootstrap/Button';
 
 function Count() {
     const [count, setCount] = useState(0)
-    const [input, setInput] = useState("")
+    const [input, setInput] = useState("Default Value")
     
     function incrementValue() {
         setCount((prevCount) => count + 2)

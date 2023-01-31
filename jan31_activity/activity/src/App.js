@@ -1,7 +1,8 @@
 import Count from "./count";
-import Header from './Components/Header'
-import Main from './Components/Main'
-import Footer from './Components/Footer'
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+import './CSS/styles.css';
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header></Header> 
       <Main></Main> 
+      {/* <Count></Count> */}
       <Footer></Footer>
 
     </>

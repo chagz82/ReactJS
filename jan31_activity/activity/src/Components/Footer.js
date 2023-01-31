@@ -3,9 +3,13 @@
 
 function Footer() {
     return(
-        <div className="footer-main">
-            <p>Footer</p>
+    <section className="Footer">
+        <div className="container">
+            <div className="footer-main">
+                    <p>Footer</p>
+            </div>
         </div>
+    </section>    
     )
 }
 
