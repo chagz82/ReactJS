@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom';
 
 
 function Header() {
@@ -14,23 +14,23 @@ function Header() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                    <Link to="/" className="nav-link active" aria-current="page">Home</Link>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
+                                        <li><Link to="/SvcMain" className="dropdown-item" >Business Analytics</Link   ></li>
+                                        <li><a className="dropdown-item" href="#">Web Development</a></li>
                                         <li>
                                             <hr className="dropdown-divider"></hr>
                                         </li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="#">Financial Modeling and Analysis</a></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="#">About Us</a>
+                                    <Link to="/AboutUs" className="nav-link active">About Us</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link active">Contact Us</a>
