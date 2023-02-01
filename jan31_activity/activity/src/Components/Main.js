@@ -8,7 +8,7 @@ function Main() {
         <div className="main-body">
             <div className="row">
                 <div className='col-8 bg-light'>
-                    <img src="https://wallpapers.com/images/hd/binary-code-code-numbers-green-glow-agx3h70ga36galq2.webp"></img>
+                    <img src="https://wallpapers.com/images/hd/binary-code-code-numbers-green-glow-agx3h70ga36galq2.webp" alt='Matrix'></img>
                     
                 </div>
                 

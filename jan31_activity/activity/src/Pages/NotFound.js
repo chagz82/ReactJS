@@ -4,7 +4,10 @@ import {Link} from 'react-router-dom';
 function NotFound() {
     return(
         <>
-            <p>Error 404:  Page not found.</p> <br />
+            <h1>
+                Error 404:  Page not found. <br />
+            </h1>
+            
             <Link to="/">Go to Home</Link>
         </>
     )

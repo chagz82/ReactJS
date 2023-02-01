@@ -4,7 +4,7 @@ import Main from './Components/Main';
 import Footer from './Components/Footer';
 import './CSS/styles.css';
 import {Routes, Route, Link} from 'react-router-dom';
-import About from './Pages/AboutUs';
+import AboutUs from "./Pages/AboutUs";
 import MainPage from './Pages/MainPage';
 import Project from './Pages/Project';
 import NotFound from './Pages/NotFound';
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       {/* <Link to="/" className='btn btn-primary'>Main</Link>
-      <Link to="/About" className='btn btn-primary'>About</Link>   
+      <Link to="/AboutUs" className='btn btn-primary'>About Us</Link>   
       <Link to="/Project" className='btn btn-primary'>Project</Link>       */}
 
 
@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route element={<MainLayout />} >
             <Route path="/" element={<Main />} />
-            <Route path="/About" element={<About />} />
+            <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/Project" element={<Project />} />
             <Route path="/Projects/:id" element={<ViewProject />} />
           </Route>

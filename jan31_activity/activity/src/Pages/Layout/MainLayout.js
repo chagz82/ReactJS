@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useOutletContext } from "react-router-dom";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 
@@ -6,10 +6,12 @@ import Footer from "../../Components/Footer";
 
 
 function MainLayout() {
+    const user=useOutletContext();
+    
     return(
         <>                
         <Header />
-            <Outlet/>
+            <Outlet context={{user: 'Mark'}}/>
         <Footer />
         </>
     )
