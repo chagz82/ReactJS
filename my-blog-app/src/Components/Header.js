@@ -1,8 +1,9 @@
 import {Link} from 'react-router-dom';
 import NatGeo from '../Pages/Andromeda';
-
+import { useState } from 'react';
 
 function Header() {
+    const [username, setUsername] = useState("") 
     
     return(
         <>
@@ -17,9 +18,9 @@ function Header() {
                             <li class="nav-item">
                                 <Link to="/" class="nav-link active" aria-current="page">Home</Link>
                             </li>
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                                 <a class="nav-link" href="#">Link</a>
-                            </li>
+                            </li> */}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Sources
@@ -35,7 +36,7 @@ function Header() {
                         <div >
                             {/* <form from-group> */}
                                 <label>
-                                    <input name="username" className="form-control" value="Username"></input>
+                                    <input name="username" className="form-control" value={username} onChange={e => setUsername(e.target.value)} placeholder="Username"></input>
                                 </label>
                                     
                                 <label>
