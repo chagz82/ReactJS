@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover-page,
+.Andromeda {
+    width: 100vw;
+    height: 80vh;
+}
+
+.form-control {
+    padding: 5px;
+}
+
